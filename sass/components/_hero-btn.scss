@@ -1,0 +1,9 @@
+.hero__btn {
+  @extend %btn;
+
+  @include btn(200px, 50px);
+
+  @media screen and (min-width: 1200px) {
+    @include btn(216px, 50px);
+  }
+}

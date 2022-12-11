@@ -1,0 +1,11 @@
+.modal-form__submit-btn {
+  @extend %btn;
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+
+  @include btn(200px, 50px);
+}

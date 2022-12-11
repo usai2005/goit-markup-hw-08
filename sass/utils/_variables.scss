@@ -1,0 +1,23 @@
+$colors: (
+  'main-text-color': #757575,
+  'secondary-text-color': #212121,
+  'border-color': #ececec,
+  'color-in-action': #2196f3,
+  'ftr-background-color': #2f303a,
+  'button-action-background-color': #188ce8,
+  'white-color': #ffffff,
+  'black-color': #000000,
+  'main-background-color': #f5f4fa,
+  'ftr-contact-text-color': rgba(255, 255, 255, 0.6),
+  'project-border-color': #eeeeee,
+  'icons-grey': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;

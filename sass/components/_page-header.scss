@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid getColor('border-color');
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+
+    padding: 16px 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+
+    // align-items: center;
+    justify-content: flex-end;
+
+    min-height: 80px;
+  }
+}

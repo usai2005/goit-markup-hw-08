@@ -1,0 +1,131 @@
+.header__menu-toggle,
+.menu-container__menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  transition: fill 250ms $timing-function;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: getColor('color-in-action');
+  }
+}
+
+.menu-container {
+  position: fixed;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: getColor('white-color');
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms $timing-function;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container__menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: getColor('white-color');
+}
+
+.mobile-menu-social,
+.mobile-menu-navigation__list,
+.mobile-menu-contacts {
+  @extend %list;
+}
+
+.mobile-menu-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-navigation__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: getColor('secondary-text-color');
+
+  text-decoration: none;
+}
+
+.mobile-menu-navigation__current:visited {
+  color: getColor('color-in-action');
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contacts__item:not(:last-child),
+.menu-container__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contacts__phone-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: getColor('color-in-action');
+
+  text-decoration: none;
+}
+
+.mobile-menu-contacts__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: getColor('main-text-color');
+
+  text-decoration: none;
+}
+
+.mobile-menu-social {
+  display: flex;
+}
+
+.mobile-menu-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu-social__item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu-social__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: getColor('color-in-action');
+  text-decoration: none;
+}

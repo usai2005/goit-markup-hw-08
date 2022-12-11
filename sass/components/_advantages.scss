@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 0;
+  }
+}
+
+.advantages__title {
+  @extend %visually-hidden;
+}

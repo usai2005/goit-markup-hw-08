@@ -1,0 +1,64 @@
+.confirmation {
+  display: flex;
+
+  align-items: center;
+
+  height: 14px;
+
+  line-height: 1.17;
+
+  color: getColor('main-text-color');
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    height: 24px;
+
+    font-size: 14px;
+
+    line-height: 1.71;
+  }
+}
+
+.confirmation__checkbox {
+  @extend %visually-hidden;
+}
+
+.confirmation__check-icon {
+  display: block;
+
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+
+  border: 2px solid getColor('secondary-text-color');
+  border-radius: 2px;
+
+  transition: background-color 250ms $timing-function, border-color 250ms $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+
+.confirmation__checkbox:checked + .confirmation__check-icon {
+  background-color: getColor('color-in-action');
+  border-color: getColor('color-in-action');
+}
+
+.confirmation__checkbox:focus + .confirmation__check-icon {
+  border-color: getColor('color-in-action');
+}
+
+.confirmation__confirm-link {
+  color: getColor('color-in-action');
+
+  margin-left: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 5px;
+  }
+}

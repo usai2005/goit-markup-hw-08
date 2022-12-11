@@ -1,0 +1,34 @@
+.icon-gallery {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  @extend %list;
+}
+
+.icon-gallery__icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  fill: getColor('icons-grey');
+
+  background-color: inherit;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function, fill 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background-color: getColor('color-in-action');
+
+    fill: getColor('white-color');
+  }
+}

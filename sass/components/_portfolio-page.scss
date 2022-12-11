@@ -1,0 +1,8 @@
+.portfolio-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-page__title {
+  @extend %visually-hidden;
+}

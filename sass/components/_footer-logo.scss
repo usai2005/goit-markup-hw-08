@@ -1,0 +1,13 @@
+.footer__logo {
+  @extend %logo;
+
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: getColor('white-color');
+}
+
+.footer__logo--blue {
+  color: getColor('color-in-action');
+}

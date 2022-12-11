@@ -1,0 +1,43 @@
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.advantages__icon-field {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: getColor('main-background-color');
+  border-radius: 4px;
+
+  height: 120px;
+
+  margin-bottom: 30px;
+}
+
+.advantages__card-title {
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: getColor('secondary-text-color');
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: 14px;
+}
+
+.advantages__card-description {
+  color: getColor('main-text-color');
+  line-height: 1.71;
+}
