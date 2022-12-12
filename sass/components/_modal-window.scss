@@ -8,7 +8,8 @@
   top: 50%;
   left: 50%;
 
-  width: 450px;
+  max-width: 528px;
+  width: calc(100% - 30px);
   height: 609px;
 
   background-color: getColor('white-color');
@@ -23,7 +24,6 @@
   padding: 40px;
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
     height: 581px;
   }
 }
