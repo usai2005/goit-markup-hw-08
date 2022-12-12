@@ -63,6 +63,10 @@
 }
 
 .modal__title {
+  @media screen and (max-width: 330px) {
+    font-size: 17px;
+  }
+
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;

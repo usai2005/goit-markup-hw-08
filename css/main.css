@@ -259,6 +259,11 @@ img {
   color: #2196f3;
   text-decoration: none;
 }
+@media screen and (max-width: 380px) {
+  .mobile-menu-contacts__phone-link {
+    font-size: 26px;
+  }
+}
 
 .mobile-menu-contacts__mail-link {
   font-weight: 500;
@@ -273,6 +278,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu-social__item:not(:last-child) {
@@ -1216,6 +1223,11 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 330px) {
+  .modal__title {
+    font-size: 17px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal__title {
     line-height: 1.17;
@@ -1369,7 +1381,7 @@ img {
 
 .confirmation__check-icon {
   display: block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 8px;
   border: 2px solid #212121;

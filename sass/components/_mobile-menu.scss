@@ -89,6 +89,10 @@
 }
 
 .mobile-menu-contacts__phone-link {
+  @media screen and (max-width: 380px) {
+    font-size: 26px;
+  }
+
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
@@ -110,6 +114,7 @@
 
 .mobile-menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social__item:not(:last-child) {
